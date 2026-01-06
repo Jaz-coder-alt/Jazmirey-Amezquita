@@ -1,0 +1,331 @@
+/*Configuración inicial*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*Variables*/
+:root {
+  --cafeo: rgb(179, 144, 122);
+  --cafec: rgb(252, 247, 235);
+  --cafe: rgb(193, 182, 163);
+  --cafeoo: rgb(85, 61, 42);
+  --cafeo1: rgb(102, 40, 10);
+  --beige: rgb(245, 245, 220);
+  --Letrai: serif, sans-serif;
+  --blanco: rgb(255, 255, 255);
+  --cafeo2: rgba(139, 115, 91);
+}
+
+/* Rectangulo1 */
+.reci {
+  background-color: #fffbf5;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  width: 100%;
+  min-height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.texi {
+  color: var(--cafeo1);
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.7;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.icons {
+  color: var(--cafeo1);
+  justify-content: center;
+  text-align: right;
+  margin-right: 20px;
+  gap: 20px;
+  font-weight: bold;
+}
+
+/* Rectangulo2 -> Quien soy + foto */
+.rec1 {
+  background-color: var(--cafeo);
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 20px;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
+.textrec1 {
+  color: var(--blanco);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: medium;
+  text-align: justify;
+  line-height: 30px;
+  margin: 0;
+  flex: 1;
+}
+
+.recb {
+  flex: 0 0 150px; /* ancho fijo */
+  height: 300px; /* alto fijo */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.recb img {
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+/*Rectangulo3 -> Habilidades */
+.contenedor1 {
+  background-color: var(--cafeo2);
+  width: 100%;
+  min-height: 150px;
+  margin-top: 0%;
+}
+
+.ctext {
+  color: var(--cafeoo);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.cimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.cimg img {
+  max-height: 100px;
+  width: auto;
+  display: block;
+}
+
+.contenedor {
+  background-color: var(--cafec);
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 30px;
+  box-sizing: border-box;
+}
+
+.arco1,
+.arco2,
+.arco3,
+.arco4 {
+  width: 180px;
+  height: 180px;
+  border-radius: 40% 40% 0% 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.arco1 img,
+.arco2 img,
+.arco3 img,
+.arco4 img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.texta1,
+.texta2,
+.texta3,
+.texta4 {
+  text-align: center;
+  color: var(--cafeoo);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 180px;
+  margin: 0 auto;
+}
+
+.texta1 ul,
+.texta2 ul,
+.texta3 ul,
+.texta4 ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.texta1 hr,
+.texta2 hr,
+.texta3 hr,
+.texta4 hr {
+  border-top: 2px solid var(--cafeoo);
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Recuadro4 -> Certificaciones */
+.cont4 {
+  background-color: var(--cafeo2);
+  width: 100%;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textc4 {
+  color: var(--beige);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
+}
+
+.cont41 {
+  background-color: var(--cafeo2);
+  width: 100%;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgc1 img,
+.imgc2 img,
+.imgc3 img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.imgc1,
+.imgc2,
+.imgc3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Recuadro5 -> Reconocimientos */
+.rec5 {
+  background-color: var(--cafeo);
+  width: 100%;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textc4 {
+  color: var(--beige);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
+}
+
+.rec51 {
+  background-color: var(--cafeo);
+  width: 100%;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.rec-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+}
+
+.rec-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.rec-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* === Utilidades personalizadas responsivas === */
+@media (max-width: 768px) {
+  /* Recuadro2: imagen + texto en columna */
+  .rec1 {
+    flex-direction: column;
+    min-height: auto;
+  }
+  .recb {
+    flex: 0 0 auto;
+    width: 150px;
+    height: 300px;
+    margin-bottom: 20px;
+  }
+  .recb img {
+    width: 150px;
+    height: 300px;
+  }
+  .textrec1 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  /* Habilidades (rectangulo3) poner todo en columna */
+  .contenedor {
+    flex-direction: column;
+    padding: 10px;
+    gap: 20px;
+  }
+  .arco1,
+  .arco2,
+  .arco3,
+  .arco4 {
+    width: 120px;
+    height: 120px;
+  }
+  .texta1,
+  .texta2,
+  .texta3,
+  .texta4 {
+    max-width: 100%;
+    font-size: 0.9rem;
+  }
+
+  /* Certificaciones (Recuadro4) y Reconocimientos (Recuadro5) en columna */
+  .cont41,
+  .rec51 {
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+  .imgc1 img,
+  .imgc2 img,
+  .imgc3 img,
+  .rec-item img {
+    max-width: 90%;
+    height: auto;
+  }
+}
